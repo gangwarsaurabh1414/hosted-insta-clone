@@ -5,6 +5,7 @@ const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
+
     },
     userName: {
         type: String,
@@ -19,7 +20,7 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     Photo: {
-        type : String,
+        type: String,
     },
     followers: [{ type: ObjectId, ref: "USER" }],
     following: [{ type: ObjectId, ref: "USER" }]
